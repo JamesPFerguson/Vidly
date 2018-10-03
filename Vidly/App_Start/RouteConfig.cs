@@ -18,6 +18,12 @@ namespace Vidly
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                "MoviesByReleaseDate",
+                "movies/released/{year}/{month}",
+                new { controller = "Movies", action = "ByReleaseDate"}
+            );
         }
     }
 }
