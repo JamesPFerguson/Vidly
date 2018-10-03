@@ -9,6 +9,8 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+
+@*The second argument in the next line is not used in partial. It is simply for exercise.*@
 @Html.Partial("_NavBar", Model.Movie);
 <div class="container body-content">
     @RenderBody()
